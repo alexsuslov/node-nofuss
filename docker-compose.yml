@@ -1,0 +1,11 @@
+version: '2'
+services:
+  web:
+    build:
+      context: ./docker
+    ports:
+      - "3000"
+    restart: always
+    environment:
+      NODE_ENV: production
+      PORT: 3000
